@@ -70,7 +70,7 @@ export default function Home() {
   }, []);
 
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5491141744221";
-  const whatsappMessage = encodeURIComponent("Hola Gastón, me interesa agendar una primera sesión");
+  const whatsappMessage = encodeURIComponent("Hola Gastón, me interesa agendar un primer encuentro");
 
   return (
     <div className="min-h-screen">
@@ -110,7 +110,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="bg-accent/20 border border-accent rounded-2xl p-6 mb-8">
                 <p className="text-accent font-bold text-xl text-center">
-                  🎁 Primera sesión GRATIS para conocernos
+                  🎁 Primer encuentro GRATIS para conocernos
                 </p>
               </div>
               <Button 
@@ -119,7 +119,7 @@ export default function Home() {
                 data-testid="button-first-session-hero"
               >
                 <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
-                  Agendar mi sesión gratuita
+                  Agendar mi encuentro gratuito
                 </a>
               </Button>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
               
               <Card className="p-8 rounded-2xl border border-border shadow-lg">
                 <CardContent className="p-0">
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">Detalles de la sesión</h3>
+                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">Detalles del encuentro</h3>
                   <div className="space-y-4 mb-8">
                     <div className="flex justify-between">
                       <span className="font-medium text-foreground">Duración:</span>
@@ -214,10 +214,10 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium text-foreground">Modalidad:</span>
-                      <span className="text-muted-foreground">Sesiones individuales</span>
+                      <span className="text-muted-foreground">Encuentros individuales</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="font-medium text-foreground">Primera sesión:</span>
+                      <span className="font-medium text-foreground">Primer encuentro:</span>
                       <span className="text-green-600 font-bold">GRATIS</span>
                     </div>
                   </div>
@@ -227,7 +227,7 @@ export default function Home() {
                     data-testid="button-reserve-session"
                   >
                     <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
-                      Agendar sesión gratuita
+                      Agendar encuentro gratuito
                     </a>
                   </Button>
                 </CardContent>
@@ -274,7 +274,7 @@ export default function Home() {
                 Este proceso no es un monólogo ni un método rígido. No se trata solo de compartir mi experiencia ni de imponer una forma. Cada encuentro es una conexión real, donde ambos aprendemos. Yo también me transformo con lo que el otro trae, porque en la vida humana es así: si no hay escucha activa, no hay aprendizaje, no hay reconocimiento, no hay empatía.
               </p>
               <p className="text-lg">
-                Por eso cada sesión es única. Vos llegás con tu historia, yo con la mía, y en el punto donde se encuentran aparece lo valioso: un espacio de crecimiento compartido.
+                Por eso cada encuentro es único. Vos llegás con tu historia, yo con la mía, y en el punto donde se encuentran aparece lo valioso: un espacio de crecimiento compartido.
               </p>
             </div>
           </div>
@@ -294,7 +294,7 @@ export default function Home() {
                     1
                   </div>
                   <h3 className="font-semibold text-lg text-foreground mb-4">Escribime</h3>
-                  <p className="text-muted-foreground">Coordinamos tu primera sesión</p>
+                  <p className="text-muted-foreground">Coordinamos tu primer encuentro</p>
                 </CardContent>
               </Card>
               
@@ -319,6 +319,18 @@ export default function Home() {
               </Card>
             </div>
             
+            <div className="mb-12 bg-blue-50 dark:bg-blue-950/20 p-8 rounded-2xl border border-blue-200 dark:border-blue-800">
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-4 text-center">Información importante</h3>
+              <div className="space-y-3 text-center">
+                <p className="text-muted-foreground">
+                  📞 <strong>Un día antes</strong> del encuentro me comunicaré contigo para confirmar
+                </p>
+                <p className="text-muted-foreground">
+                  🔗 <strong>El día del encuentro</strong> te enviaré el link para acceder a la videollamada
+                </p>
+              </div>
+            </div>
+            
             <div className="text-center space-y-4">
               <Button 
                 asChild
@@ -326,7 +338,7 @@ export default function Home() {
                 data-testid="button-calendly-contact"
               >
                 <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
-                  📅 Agendar por Calendly
+                  📅 Agendar encuentro
                 </a>
               </Button>
               <Button 
