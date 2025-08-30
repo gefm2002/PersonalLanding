@@ -1,0 +1,100 @@
+**Objetivo del sitio:**
+Crear una landing page personal para **Gastón Esteban Fernández**, 46 años, de Buenos Aires, Argentina. Ingeniero en Informática, padre de dos nenas (Emilia y Delfina), que ofrece sesiones de acompañamiento en **gestión emocional y autoconocimiento**, usando como herramienta central la **escritura reflexiva**. El sitio debe transmitir autenticidad, claridad y cercanía, sin promesas mágicas, mostrando la historia personal como diferencial.
+
+---
+
+### 🖼️ Diseño visual
+
+* **Estilo:** minimalista, moderno y humano.
+* **Colores principales:**
+
+  * Blanco y negro como base (limpieza, claridad).
+  * Acentos en azul petróleo o verde esmeralda (profundidad, calma).
+  * Detalles en dorado o beige suave para transmitir dignidad y calidez.
+* **Tipografía:**
+
+  * Sans-serif limpia para textos (ej. Inter, Lato, Poppins).
+  * Serif elegante para frases destacadas/testimoniales (ej. Playfair Display).
+* **Layout:**
+
+  * Hero grande arriba con frase impactante y botón de acción.
+  * Sección con foto personal (foto tuya en blanco y negro o en tonos cálidos).
+  * Bloques claros y con aire, que guíen la lectura de arriba hacia abajo.
+* **Logo inspirador:** círculo incompleto estilo “enso zen” (representa el regreso a uno mismo, el despertar, lo imperfecto como perfecto). Dentro o al lado, tu nombre en tipografía elegante: **Gastón Esteban Fernández**.
+
+---
+
+### 📄 Contenido a incluir
+
+#### Hero (arriba de todo)
+
+* Frase principal: **“Salir de la matrix es volver a vos mismo.”**
+* Subtítulo: *“Acompaño procesos de gestión emocional y autoconocimiento, con herramientas simples y profundas como la escritura reflexiva.”*
+* Botón CTA: **\[Quiero mi primera sesión]** (link a WhatsApp o Calendly).
+
+---
+
+#### Sección: Sobre mí
+
+Texto:
+*"Soy Gastón Esteban Fernández, 46 años, de Buenos Aires. Ingeniero en Informática, pero sobre todo, papá presente de dos nenas, Emilia y Delfina. Después de un quiebre personal, entendí que había vivido demasiado tiempo en piloto automático, dentro de una matrix que me alejaba de mí mismo. Salir de ahí y volver a casa fue el inicio de este camino."*
+
+(Foto tuya aquí, en un estilo cálido o blanco y negro).
+
+---
+
+#### Sección: Mi proceso personal
+
+Texto:
+*"No llegué a este lugar por teoría, sino atravesando mi propia tormenta. En los últimos meses dediqué más de 660 horas a la escritura y la reflexión. Estuve en la ansiedad y el dolor, y sigo sintiendo las mismas emociones humanas, pero hoy aprendí a gestionarlas desde la conciencia y el autoconocimiento. Ese recorrido me motiva a acompañar a otros: porque sé lo que es no encontrar salida, y también sé lo que se siente empezar a recuperar dignidad, amor propio y paz."*
+
+---
+
+#### Sección: Mi propuesta
+
+Bullets claros:
+
+* Escucha activa, sin juicios.
+* Ejercicios para poner en palabras lo que sentís.
+* Escritura reflexiva como herramienta de autoconocimiento.
+* Cierre claro con pasos simples para tu día a día.
+
+**Duración:** 1 hora (online).
+**Modalidad:** sesiones individuales.
+**Primera sesión:** valor accesible para probar.
+Botón: **\[Reservar una sesión]**
+
+---
+
+#### Sección: Mi visión
+
+*"Mi objetivo en la vida es ayudar a otros a volver a casa: a su propio corazón, al amor propio y a la dignidad que nunca se pierden, solo se olvidan. Todos tenemos una puerta de entrada: la escritura, la música, el arte, la fe, correr, o simplemente detenernos a escucharnos."*
+
+---
+
+#### Sección: Disclaimer honesto
+
+*"No soy gurú ni psicólogo. No vengo a darte fórmulas mágicas. Soy una persona común, con la misma fragilidad y la misma fuerza que vos. Lo que sí puedo hacer es acompañarte, compartirte cómo gestioné mis propios momentos difíciles, qué herramientas me sirvieron, y ayudarte a encontrar las tuyas."*
+
+---
+
+#### Sección: Cómo empezar
+
+1. Escribime y coordinamos tu primera sesión.
+2. Nos encontramos online, en un espacio cuidado.
+3. Empezás tu camino de regreso a vos mismo.
+
+👉 Botón: **\[Hablame por WhatsApp]**
+
+---
+
+#### Cierre
+
+*"No estás solo en este camino. El primer paso es volver a vos."*
+
+---
+
+👉 **Instrucción final para Replit**:
+Generar el sitio en HTML + CSS + JS simple, responsivo, con diseño minimalista, usando la paleta indicada. Incluir espacio para logo (círculo zen/enso) y foto personal en “Sobre mí”. Botones de acción visibles en Hero, “Mi propuesta” y “Cómo empezar”.
+
+---
