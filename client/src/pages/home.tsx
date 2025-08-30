@@ -241,9 +241,27 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto section-fade">
             <div className="bg-muted/30 p-12 rounded-3xl border-l-4 border-accent">
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-8">Disclaimer honesto</h2>
+              <h2 className="font-serif text-3xl font-bold text-foreground mb-8">Sobre mi</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 No soy gurú ni psicólogo. No vengo a darte fórmulas mágicas. Soy una persona común, con la misma fragilidad y la misma fuerza que vos. Lo que sí puedo hacer es acompañarte, compartirte cómo gestioné mis propios momentos difíciles, qué herramientas me sirvieron, y ayudarte a encontrar las tuyas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Una conexión humana Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto section-fade">
+            <h2 className="font-serif text-4xl font-bold text-foreground mb-12 text-center">Mi propuesta</h2>
+            <h3 className="font-serif text-2xl font-semibold text-foreground mb-8">Una conexión humana</h3>
+            <div className="prose prose-lg text-muted-foreground leading-relaxed space-y-6">
+              <p className="text-lg">
+                Este proceso no es un monólogo ni un método rígido. No se trata solo de compartir mi experiencia ni de imponer una forma. Cada encuentro es una conexión real, donde ambos aprendemos. Yo también me transformo con lo que el otro trae, porque en la vida humana es así: si no hay escucha activa, no hay aprendizaje, no hay reconocimiento, no hay empatía.
+              </p>
+              <p className="text-lg">
+                Por eso cada sesión es única. Vos llegás con tu historia, yo con la mía, y en el punto donde se encuentran aparece lo valioso: un espacio de crecimiento compartido.
               </p>
             </div>
           </div>
