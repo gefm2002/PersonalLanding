@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { EnsoLogo } from "@/components/enso-logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import gastonPhoto from "@assets/image_1756590996831.png";
 
 export default function Home() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -137,7 +138,7 @@ export default function Home() {
               </div>
               <div className="section-fade">
                 <img 
-                  src="@assets/image_1756590996831.png"
+                  src={gastonPhoto}
                   alt="Gastón Esteban Fernández" 
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-square"
                   data-testid="img-profile-gaston"
