@@ -107,15 +107,22 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
               Acompaño procesos de gestión emocional y autoconocimiento, con herramientas simples y profundas como la escritura reflexiva.
             </p>
-            <Button 
-              asChild
-              className="bg-primary text-primary-foreground hover:bg-secondary rounded-full text-lg px-8 py-4 h-auto font-semibold transform hover:scale-105 transition-all shadow-lg"
-              data-testid="button-first-session-hero"
-            >
-              <a href="#primera-sesion">
-                Quiero mi primera sesión
-              </a>
-            </Button>
+            <div className="space-y-4">
+              <div className="bg-accent/20 border border-accent rounded-2xl p-6 mb-8">
+                <p className="text-accent font-bold text-xl text-center">
+                  🎁 Primera sesión GRATIS para conocernos
+                </p>
+              </div>
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-secondary rounded-full text-lg px-8 py-4 h-auto font-semibold transform hover:scale-105 transition-all shadow-lg"
+                data-testid="button-first-session-hero"
+              >
+                <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
+                  Agendar mi sesión gratuita
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -211,7 +218,7 @@ export default function Home() {
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium text-foreground">Primera sesión:</span>
-                      <span className="text-accent font-semibold">Valor accesible</span>
+                      <span className="text-green-600 font-bold">GRATIS</span>
                     </div>
                   </div>
                   <Button 
@@ -219,8 +226,8 @@ export default function Home() {
                     className="w-full bg-primary text-primary-foreground hover:bg-secondary rounded-full"
                     data-testid="button-reserve-session"
                   >
-                    <a href="#primera-sesion">
-                      Reservar una sesión
+                    <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
+                      Agendar sesión gratuita
                     </a>
                   </Button>
                 </CardContent>
@@ -312,7 +319,16 @@ export default function Home() {
               </Card>
             </div>
             
-            <div className="text-center">
+            <div className="text-center space-y-4">
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-secondary px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg mr-4"
+                data-testid="button-calendly-contact"
+              >
+                <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
+                  📅 Agendar por Calendly
+                </a>
+              </Button>
               <Button 
                 asChild
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg"
@@ -343,7 +359,7 @@ export default function Home() {
               className="bg-primary text-primary-foreground hover:bg-secondary px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg"
               data-testid="button-start-process"
             >
-              <a href={`https://wa.me/${whatsappNumber}`}>
+              <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
                 Comenzar mi proceso
               </a>
             </Button>
