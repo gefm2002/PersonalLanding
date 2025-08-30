@@ -1,0 +1,158 @@
+¡listo! acá tenés un **prompt para Replit** que indica **modificar tu landing actual** (no crear una nueva) aplicando todos los cambios acordados. Copiá y pegá esto tal cual en tu Replit / asistente de IA del proyecto:
+
+---
+
+### 🔧 PROMPT PARA REPLIT — *APLICAR CAMBIOS A LA LANDING EXISTENTE (NO CREAR UNA NUEVA)*
+
+**Contexto:** Ya tengo una landing funcionando en este proyecto. **No crees un sitio nuevo.** Quiero que **edites el código actual** aplicando los siguientes cambios de contenido, estilo y UX, manteniendo la estructura y componentes existentes cuando sea posible.
+
+#### 0) Reglas
+
+* No borres archivos ni cambies el build system.
+* No renombres rutas.
+* Apuntá a editar los componentes/secciones ya presentes (Hero, Sobre mí, Mi proceso, Mi propuesta, etc.).
+* Si falta alguna sección, **agregala** en el lugar indicado.
+* Respetá mi foto actual en “Sobre mí”.
+* Confirmá que **todos los CTAs** apunten a mi WhatsApp: `https://wa.me/` (dejá el placeholder si no hay número).
+
+---
+
+## A) CONTENIDO (reemplazar/inyectar)
+
+### 1) HERO
+
+* **Título (mantener):**
+  `Salir de la matrix es volver a vos mismo.`
+* **Subtítulo (reemplazar por este):**
+  `No soy distinto a vos, pero sé lo que es atravesar el dolor y reencontrar la calma. Acompaño procesos de gestión emocional y autoconocimiento, con herramientas simples y profundas como la escritura reflexiva.`
+* **CTA (texto):** `Agendar mi primera sesión`
+* **CTA (link):** `https://wa.me/` (placeholder)
+
+### 2) “Sobre mí” (el bloque superior se mantiene con foto)
+
+Reemplazar el texto por:
+
+```
+Soy Gastón Esteban Fernández, tengo 46 años, soy de Buenos Aires y me formé como Ingeniero en Informática. Durante mucho tiempo viví en piloto automático, atrapado en una matrix que me alejaba de mí mismo. Después de un quiebre personal, elegí salir de ahí y volver a casa. Hoy, además de mi vida profesional, lo que más me define es ser papá presente de dos nenas, Emilia y Delfina. Ellas me recuerdan cada día que lo esencial no es solo lo que logramos, sino cómo elegimos vivir y acompañar.
+```
+
+### 3) “Mi proceso personal”
+
+Reemplazar el párrafo por:
+
+```
+No llegué a este lugar por teoría, sino atravesando mi propia tormenta. En los últimos meses dediqué más de 660 horas a la escritura y la reflexión. Estuve en la ansiedad y el dolor, y sigo sintiendo las mismas emociones humanas, pero hoy aprendí a gestionarlas desde la conciencia y el autoconocimiento. Ese recorrido me motiva a acompañar a otros: porque sé lo que es no encontrar salida, y también sé lo que se siente empezar a recuperar dignidad, amor propio y paz.
+```
+
+### 4) “Mi propuesta”
+
+* Lista bullets (sustituir):
+
+  * `Escucha activa, sin juicios.`
+  * `Ejercicios para poner en palabras lo que sentís.`
+  * `Escritura reflexiva como herramienta de autoconocimiento.`
+  * `Cierre claro con pasos simples para tu día a día.`
+* **Card/Detalle de sesión** (si existe, actualizar):
+
+  * `Duración: 1 hora (online, por Zoom o Meet).`
+  * `Modalidad: sesiones individuales.`
+  * `Primera sesión: valor accesible para probar.`
+* **CTA secundario bajo esta sección:**
+
+  * Texto: `Agendar mi primera sesión`
+  * Link: `https://wa.me/`
+
+### 5) NUEVA sección “Una conexión humana” (insertar **después de Mi propuesta** y **antes del disclaimer**)
+
+Título: `Una conexión humana`
+Texto:
+
+```
+Este proceso no es un monólogo ni un método rígido. No se trata solo de compartir mi experiencia ni de imponer una forma. Cada encuentro es una conexión real, donde ambos aprendemos. Yo también me transformo con lo que el otro trae. Porque en la vida humana, sin escucha activa, no hay aprendizaje, no hay reconocimiento, no hay empatía.
+
+Por eso cada sesión es única. Vos llegás con tu historia, yo con la mía, y en el punto donde se encuentran aparece lo valioso: un espacio de crecimiento compartido.
+```
+
+### 6) Renombrar el segundo “Sobre mí” (el bloque inferior) → **“Disclaimer honesto”**
+
+Reemplazar el texto por:
+
+```
+No soy gurú ni psicólogo. No vengo a darte fórmulas mágicas. Soy una persona común, con la misma fragilidad y la misma fuerza que vos. Lo que sí puedo hacer es acompañarte, compartirte cómo gestioné mis propios momentos difíciles, qué herramientas me sirvieron, y ayudarte a encontrar las tuyas.
+```
+
+### 7) “Mi visión” (mantener sección, reemplazar cita por:)
+
+```
+Mi objetivo en la vida es ayudar a otros a volver a casa: a su propio corazón, al amor propio y a la dignidad que nunca se pierden, solo se olvidan. Todos tenemos una puerta de entrada: la escritura, la música, el arte, la fe, correr o simplemente detenernos a escucharnos.
+```
+
+### 8) Footer / Cierre (asegurar)
+
+* Frase: `No estás solo en este camino. El primer paso es volver a vos.`
+* Agregar **CTA final** repetido:
+
+  * Texto: `Agendar mi primera sesión`
+  * Link: `https://wa.me/`
+
+---
+
+## B) DISEÑO / ESTILO (ajustar sin romper layout)
+
+1. **Tipografías**
+
+   * Títulos: `Playfair Display` (serif).
+   * Cuerpo: `Inter` o `Lato`.
+   * Si usás Google Fonts, importalas globalmente y aplicá en los estilos/Tailwind.
+
+2. **Colores**
+
+   * Base: blanco/negro.
+   * Acento principal: usar **verde esmeralda (#2ECC71)** *o* **azul petróleo (#005F73)** para CTAs, bullets y subrayados.
+   * Hover CTA: misma tonalidad con 10–15% más oscura.
+
+3. **Logo**
+
+   * En la navbar, a la izquierda del nombre, sumar un **círculo enso zen** (trazo de pincel incompleto) monocromo. Si no hay SVG, crear un placeholder `<div>` circular con borde brush-like o un SVG simple.
+
+4. **Hero**
+
+   * Aumentar levemente el `line-height` del subtítulo para legibilidad.
+   * Mantener foto solo en “Sobre mí” (no en Hero).
+
+5. **CTAs**
+
+   * Asegurar **tres** apariciones: Hero, Mi propuesta, Footer.
+   * Botones con border-radius generoso y sombra suave.
+
+6. **Accesibilidad**
+
+   * Contraste AA mínimo para texto/CTAs.
+   * Etiquetas alt descriptivas (especialmente para mi foto).
+   * Headings en jerarquía semántica (h1, h2, etc.).
+
+---
+
+## C) CÓDIGO (orientación rápida)
+
+* Si usás React: editar componentes existentes (`Hero.jsx`, `About.jsx`, `Process.jsx`, `Offer.jsx`, `Vision.jsx`, `Footer.jsx` o equivalentes).
+* Insertar nuevo componente `Connection.jsx` (Una conexión humana) y montarlo en la página entre “Mi propuesta” y “Disclaimer honesto”.
+* Actualizar el título del componente inferior de “Sobre mí” a “Disclaimer honesto”.
+* Verificar que todos los botones `onClick`/`href` apunten a `https://wa.me/`.
+
+---
+
+## D) QA final
+
+* Revisar responsive en móvil (Hero + foto + cards).
+* Probar todos los enlaces de CTA.
+* Ortografía y tildes en español (voseo).
+
+---
+
+**Aplicá estos cambios ahora sobre el proyecto actual, sin crear una nueva landing.**
+Si algo no existe aún, agregalo; si existe, actualizalo. Mantener estilo minimalista y elegante.
+
+---
+
+Si querés, después te paso el **snippet React/Tailwind** del bloque “Una conexión humana” para pegar directo.

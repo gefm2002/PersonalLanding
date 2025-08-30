@@ -129,10 +129,16 @@ export default function Home() {
                 <h2 className="font-serif text-4xl font-bold text-foreground mb-8">Sobre mí</h2>
                 <div className="prose prose-lg text-muted-foreground leading-relaxed">
                   <p className="text-lg mb-6">
-                    Soy <strong className="text-foreground">Gastón Esteban Fernández</strong>, 46 años, de Buenos Aires. Ingeniero en Informática, pero sobre todo, papá presente de dos nenas, Emilia y Delfina.
+                    Soy <strong className="text-foreground">Gastón Esteban Fernández</strong>, tengo 46 años y soy de Buenos Aires. Tengo formación profesional en áreas de tecnología y desde hace más de dos décadas presto servicios liderando equipos multidisciplinarios. Mi enfoque siempre estuvo puesto en el trabajo en equipo y en alcanzar resultados, pero cuidando lo humano y respetando el equilibrio entre la vida personal y laboral.
+                  </p>
+                  <p className="text-lg mb-6">
+                    Después de un quiebre personal, elegí salir del piloto automático y volver a casa. Hoy, además de mi vida profesional, dedico parte de mi tiempo libre a la escritura, a la introspección y al autoconocimiento. En ese camino, a diario aparecen nuevas herramientas que me sostienen: la conciencia plena, la escritura, la comunicación, la escucha activa y la fe.
+                  </p>
+                  <p className="text-lg mb-6">
+                    Y aunque son universales, no son una receta. Estas son las mías; cada uno tiene dentro de sí las propias.
                   </p>
                   <p className="text-lg">
-                    Después de un quiebre personal, entendí que había vivido demasiado tiempo en piloto automático, dentro de una matrix que me alejaba de mí mismo. Salir de ahí y volver a casa fue el inicio de este camino.
+                    También soy papá de dos nenas, Emilia y Delfina. Ellas me recuerdan cada día que lo esencial no es solo lo que logramos, sino cómo elegimos vivir, sentir y acompañar.
                   </p>
                 </div>
               </div>
