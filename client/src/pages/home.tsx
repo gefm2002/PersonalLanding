@@ -68,7 +68,7 @@ export default function Home() {
     };
   }, []);
 
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5491123456789";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5491141744221";
   const whatsappMessage = encodeURIComponent("Hola Gastón, me interesa agendar una primera sesión");
 
   return (
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div className="section-fade">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                  src="@assets/image_1756590996831.png"
                   alt="Gastón Esteban Fernández" 
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-square"
                   data-testid="img-profile-gaston"
