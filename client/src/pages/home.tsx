@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { EnsoLogo } from "@/components/enso-logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiInstagram } from "react-icons/si";
+import { SiInstagram, SiSubstack } from "react-icons/si";
 import gastonPhoto from "@assets/image_1756590996831.png";
 
 export default function Home() {
@@ -367,7 +367,7 @@ export default function Home() {
             <p className="text-lg text-muted-foreground mb-8">
               Gastón Esteban Fernández • Buenos Aires, Argentina
             </p>
-            <div className="flex items-center justify-center mb-12">
+            <div className="flex items-center justify-center space-x-8 mb-12">
               <a 
                 href="https://www.instagram.com/volveracasa.ar/" 
                 target="_blank" 
@@ -377,6 +377,16 @@ export default function Home() {
               >
                 <SiInstagram className="w-6 h-6" />
                 <span>@volveracasa.ar</span>
+              </a>
+              <a 
+                href="https://volveracasa.substack.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="link-blog"
+              >
+                <SiSubstack className="w-6 h-6" />
+                <span>Blog & Reflexiones</span>
               </a>
             </div>
             <Button 
@@ -400,7 +410,7 @@ export default function Home() {
             <span className="font-serif font-semibold">Gastón Esteban Fernández</span>
           </div>
           <p className="text-sm opacity-80 mb-4">Gestión emocional y autoconocimiento • Buenos Aires, Argentina</p>
-          <div className="flex justify-center">
+          <div className="flex justify-center space-x-6">
             <a 
               href="https://www.instagram.com/volveracasa.ar/" 
               target="_blank" 
@@ -409,7 +419,17 @@ export default function Home() {
               data-testid="link-instagram-footer"
             >
               <SiInstagram className="w-4 h-4" />
-              <span>@volveracasa.ar</span>
+              <span>Instagram</span>
+            </a>
+            <a 
+              href="https://volveracasa.substack.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-background/80 hover:text-background transition-colors text-sm"
+              data-testid="link-blog-footer"
+            >
+              <SiSubstack className="w-4 h-4" />
+              <span>Blog</span>
             </a>
           </div>
         </div>
