@@ -250,6 +250,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Newsletter Section */}
+      <section className="py-20 bg-gradient-to-r from-secondary/5 to-primary/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center section-fade">
+            <h2 className="font-serif text-4xl font-bold text-foreground mb-8">Reflexiones y escritos</h2>
+            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Suscribite a mi blog para recibir reflexiones, herramientas y experiencias sobre el camino de regreso a uno mismo.
+            </p>
+            <div className="flex justify-center">
+              <div className="bg-white rounded-2xl shadow-xl p-4">
+                <iframe 
+                  src="https://volveracasa.substack.com/embed" 
+                  width="480" 
+                  height="320" 
+                  style={{border: '1px solid #EEE', background: 'white'}} 
+                  frameBorder="0" 
+                  scrolling="no"
+                  className="max-w-full"
+                  title="Suscripción al blog Volver a Casa"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Disclaimer honesto Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
