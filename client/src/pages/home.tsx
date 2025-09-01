@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { EnsoLogo } from "@/components/enso-logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { SiInstagram } from "react-icons/si";
 import gastonPhoto from "@assets/image_1756590996831.png";
 
 export default function Home() {
@@ -363,9 +364,21 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-8">
               "No estás solo en este camino. El primer paso es volver a vos."
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-8">
               Gastón Esteban Fernández • Buenos Aires, Argentina
             </p>
+            <div className="flex items-center justify-center mb-12">
+              <a 
+                href="https://www.instagram.com/volveracasa.ar/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="link-instagram"
+              >
+                <SiInstagram className="w-6 h-6" />
+                <span>@volveracasa.ar</span>
+              </a>
+            </div>
             <Button 
               asChild
               className="bg-primary text-primary-foreground hover:bg-secondary px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg"
@@ -386,7 +399,19 @@ export default function Home() {
             <EnsoLogo size="sm" className="filter invert" />
             <span className="font-serif font-semibold">Gastón Esteban Fernández</span>
           </div>
-          <p className="text-sm opacity-80">Gestión emocional y autoconocimiento • Buenos Aires, Argentina</p>
+          <p className="text-sm opacity-80 mb-4">Gestión emocional y autoconocimiento • Buenos Aires, Argentina</p>
+          <div className="flex justify-center">
+            <a 
+              href="https://www.instagram.com/volveracasa.ar/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-background/80 hover:text-background transition-colors text-sm"
+              data-testid="link-instagram-footer"
+            >
+              <SiInstagram className="w-4 h-4" />
+              <span>@volveracasa.ar</span>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
