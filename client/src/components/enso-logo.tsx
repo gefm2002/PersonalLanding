@@ -1,3 +1,5 @@
+import ensoImage from "@assets/enso_1756691036417.png";
+
 interface EnsoLogoProps {
   size?: "sm" | "md" | "lg";
   className?: string;
@@ -5,22 +7,16 @@ interface EnsoLogoProps {
 
 export function EnsoLogo({ size = "md", className = "" }: EnsoLogoProps) {
   const sizeClasses = {
-    sm: "w-8 h-8 border-2",
-    md: "w-15 h-15 border-3",
-    lg: "w-20 h-20 border-4"
+    sm: "w-8 h-8",
+    md: "w-15 h-15",
+    lg: "w-20 h-20"
   };
 
   return (
-    <div 
-      className={`
-        ${sizeClasses[size]} 
-        border-primary 
-        rounded-full 
-        border-t-transparent 
-        transform 
-        -rotate-45 
-        ${className}
-      `}
+    <img 
+      src={ensoImage}
+      alt="Enso Logo"
+      className={`${sizeClasses[size]} object-contain ${className}`}
       data-testid="enso-logo"
     />
   );
