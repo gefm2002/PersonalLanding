@@ -383,7 +383,7 @@ export default function Home() {
       <footer className="bg-foreground text-background py-8">
         <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-8 h-8 border-2 border-background rounded-full border-t-transparent transform rotate-45"></div>
+            <EnsoLogo size="sm" className="filter invert" />
             <span className="font-serif font-semibold">Gastón Esteban Fernández</span>
           </div>
           <p className="text-sm opacity-80">Gestión emocional y autoconocimiento • Buenos Aires, Argentina</p>
