@@ -8,8 +8,8 @@ interface EnsoLogoProps {
 export function EnsoLogo({ size = "md", className = "" }: EnsoLogoProps) {
   const sizeClasses = {
     sm: "w-8 h-8",
-    md: "w-15 h-15",
-    lg: "w-20 h-20"
+    md: "w-12 h-12",
+    lg: "w-16 h-16"
   };
 
   return (
