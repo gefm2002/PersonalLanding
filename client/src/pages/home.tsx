@@ -62,6 +62,42 @@ export default function Home() {
 
     window.addEventListener('scroll', handleScroll);
 
+    // Newsletter interaction detection for download section
+    const handleNewsletterInteraction = () => {
+      const iframe = document.querySelector('iframe[src*="substack.com/embed"]') as HTMLIFrameElement;
+      const downloadSection = document.getElementById('download-section');
+      
+      if (iframe && downloadSection) {
+        let interactionTimer: NodeJS.Timeout;
+        
+        const showDownload = () => {
+          setTimeout(() => {
+            if (downloadSection) {
+              downloadSection.classList.remove('hidden');
+              trackEvent('download_section_shown', 'engagement', 'newsletter_section');
+            }
+          }, 3000); // Show after 3 seconds
+        };
+
+        // Show download section when user interacts with newsletter area
+        const iframeContainer = iframe.parentElement;
+        if (iframeContainer) {
+          iframeContainer.addEventListener('click', () => {
+            clearTimeout(interactionTimer);
+            interactionTimer = setTimeout(showDownload, 2000);
+          });
+          
+          iframeContainer.addEventListener('mouseenter', () => {
+            clearTimeout(interactionTimer);
+            interactionTimer = setTimeout(showDownload, 5000);
+          });
+        }
+      }
+    };
+
+    // Initialize newsletter interaction after a delay
+    setTimeout(handleNewsletterInteraction, 2000);
+
     return () => {
       observerRef.current?.disconnect();
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -256,12 +292,23 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-r from-secondary/5 to-primary/5">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center section-fade">
-            <h2 className="font-serif text-4xl font-bold text-foreground mb-8">Reflexiones y escritos</h2>
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Suscribite a mi blog para recibir reflexiones, herramientas y experiencias sobre el camino de regreso a uno mismo.
+            <h2 className="font-serif text-4xl font-bold text-foreground mb-8">Guía gratuita de ejercicios</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <strong>Suscribite a mi blog y descargá gratis:</strong><br/>
+              "Volver a casa a través de la escritura reflexiva" - 5 ejercicios de autoconocimiento y gestión emocional.
             </p>
+            <div className="bg-accent/20 rounded-xl p-6 mb-8 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-primary/10 rounded-full p-3">
+                  <span className="text-2xl">📝</span>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Incluye ejercicios prácticos para nombrar tus máscaras, sanar heridas del pasado y reconectar con tu verdad interior.
+              </p>
+            </div>
             <div className="flex justify-center">
-              <div className="bg-white rounded-2xl shadow-xl p-4">
+              <div className="bg-white rounded-2xl shadow-xl p-4 relative">
                 <iframe 
                   src="https://volveracasa.substack.com/embed" 
                   width="480" 
@@ -272,8 +319,41 @@ export default function Home() {
                   className="max-w-full"
                   title="Suscripción al blog Volver a Casa"
                 ></iframe>
+                <div id="download-section" className="hidden mt-4 p-4 bg-green-50 rounded-xl border border-green-200">
+                  <div className="text-center">
+                    <div className="text-green-800 font-semibold mb-2">¡Gracias por suscribirte! 🎉</div>
+                    <Button 
+                      asChild
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full"
+                      data-testid="button-download-guide"
+                      onClick={() => trackEvent('guide_download', 'conversion', 'newsletter_section')}
+                    >
+                      <a href="/api/download/guia-ejercicios.pdf" download="Guia-Ejercicios-Volver-a-Casa.pdf">
+                        📄 Descargar guía gratuita
+                      </a>
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
+            <p className="text-sm text-muted-foreground mt-4">
+              Después de suscribirte aparecerá automáticamente el enlace de descarga
+            </p>
+            <Button 
+              id="show-download-button"
+              variant="outline" 
+              className="mt-4 text-sm"
+              onClick={() => {
+                const downloadSection = document.getElementById('download-section');
+                if (downloadSection) {
+                  downloadSection.classList.remove('hidden');
+                  trackEvent('manual_download_shown', 'engagement', 'newsletter_section');
+                }
+              }}
+              data-testid="button-show-download"
+            >
+              Ya me suscribí, mostrar descarga
+            </Button>
           </div>
         </div>
       </section>
