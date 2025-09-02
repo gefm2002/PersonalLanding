@@ -3,6 +3,7 @@ import { EnsoLogo } from "@/components/enso-logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SiInstagram, SiSubstack } from "react-icons/si";
+import { trackEvent } from "@/lib/analytics";
 import gastonPhoto from "@assets/image_1756590996831.png";
 
 export default function Home() {
@@ -226,6 +227,7 @@ export default function Home() {
                     asChild
                     className="w-full bg-primary text-primary-foreground hover:bg-secondary rounded-full"
                     data-testid="button-reserve-session"
+                    onClick={() => trackEvent('calendly_click', 'engagement', 'services_section')}
                   >
                     <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
                       Agendar encuentro gratuito
@@ -363,6 +365,7 @@ export default function Home() {
                 asChild
                 className="bg-primary text-primary-foreground hover:bg-secondary px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg mr-4"
                 data-testid="button-calendly-contact"
+                onClick={() => trackEvent('calendly_click', 'engagement', 'contact_section')}
               >
                 <a href="https://calendly.com/fernandez-gaston-e/40min" target="_blank" rel="noopener noreferrer">
                   📅 Agendar encuentro
@@ -372,6 +375,7 @@ export default function Home() {
                 asChild
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 h-auto rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg"
                 data-testid="button-whatsapp-contact"
+                onClick={() => trackEvent('whatsapp_click', 'contact', 'contact_section')}
               >
                 <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}>
                   💬 Hablame por WhatsApp
